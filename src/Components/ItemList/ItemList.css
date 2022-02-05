@@ -1,0 +1,11 @@
+.Item_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ItemList {
+    /* border: 1px solid black; */
+    background: #fff;
+    border-radius: 15px;
+}

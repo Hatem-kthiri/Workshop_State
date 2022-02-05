@@ -1,38 +1,55 @@
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Counter-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+}
+.Counter-buttons button {
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.Counter-buttons button:first-of-type {
+    background-color: rgba(0, 128, 0, 0.76);
+}
+.Counter-buttons button:first-of-type:hover {
+    background-color: green;
+}
+.Counter-buttons button:nth-of-type(2):hover {
+    background-color: rgba(228, 9, 9, 0.623);
+}
+.Counter-buttons button:nth-of-type(2) {
+    background-color: rgb(231, 59, 59);
+}
+.Counter-buttons h2 {
+    font-size: 38px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.colorS9 {
+    color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/***************************/
+
+.App .title {
+    color: rgb(250, 70, 109);
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    background: linear-gradient(#cad3d0, #4ea580);
+    height: 690px;
 }
